@@ -1,13 +1,13 @@
 # GoMyCode Exercices Platform Back end 
 
-This the back end of the GoMyCode Exercices Platform project.  
+This repository is the back end of the GoMyCode Exercices Platform project.  
 Key words : NodeJS , expressJS , Mongodb, Mongoose.  
 
 ## Back end API
 
 The back end application is primaraly a Rest API consumed by a Front end application.
 
-Available Rest endpoints:
+Available Rest APIs endpoints:
 
 1. Authenticate a teacher or a student
 
