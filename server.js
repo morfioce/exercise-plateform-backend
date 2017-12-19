@@ -11,7 +11,7 @@ app.use(logger('dev'))
 app.use(errorhandler())
 
 app.get('/login' , (req,res)=>{
-   res.send('this is the Home page')
+   res.send('this is the login page')
 })
 
 
