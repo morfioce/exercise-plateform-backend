@@ -10,7 +10,10 @@ let app  = express()
 app.use(logger('dev'))
 app.use(errorhandler())
 
-app.get('/login' , (req,res)=>{
+app.get('/' , (req,res)=>{
+   res.send('this is the Home page')
+})
+app.post('/login' , (req,res)=>{
    res.send('this is the login page')
 })
 
