@@ -27,6 +27,6 @@ with the backend of this platform have the following features:
 
 ## Built With
 
-* [NodeJS](http://www.dropwizard.io/1.0.2/docs/) - The run time javascript
+* [NodeJS](https://nodejs.org/en/) - The run time javascript
 * [ExpressJS](http://expressjs.com/) - framework web for node.js
-* [Mongodb](https://rometools.github.io/rome/) - database
+* [Mongodb](https://www.mongodb.com/) - database
