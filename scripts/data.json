@@ -4,28 +4,28 @@
       "email": "moncef.bouallagui@gmail.com",
       "lastName": "bouallagui",
       "firstName": "moncef",
-      "password": "teacherPassword",
+      "password": "$2b$10$mahlhactGi3RNYjZvoWutOgwQqC4vJY5n68YQVDVAjMXWGR8biGVK",
       "role": ["teacher", "student"]
     },
     {
       "email": "sameh.ghanmi@gmail.com",
       "lastName": "ghanmi",
       "firstName": "sameh",
-      "password": "teacherPassword",
+      "password": "$2b$10$mahlhactGi3RNYjZvoWutOgwQqC4vJY5n68YQVDVAjMXWGR8biGVK",
       "role": ["teacher"]
     },
     {
       "email": "amira.manai@gmail.com",
       "lastName": "manai",
       "firstName": "amira",
-      "password": "studentPasword",
+      "password": "$2b$10$OA5JIHl2ClKDpkoSmd00.ejQ7DfNxf4Sh1AlQBLJfmsX79VYuH1lu",
       "role": ["student"]
     },
     {
       "email": "sarra.naifar@gmail.com",
       "lastName": "naifar",
       "firstName": "sarra",
-      "password": "studentPasword",
+      "password": "$2b$10$OA5JIHl2ClKDpkoSmd00.ejQ7DfNxf4Sh1AlQBLJfmsX79VYuH1lu",
       "role": ["student"],
       "classrooms": [
         {
