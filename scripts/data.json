@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "email": "moncef.bouallagui@gmail.com",
+      "lastName": "bouallagui",
+      "firstName": "moncef",
+      "password": "teacherPassword",
+      "role": ["teacher", "student"]
+    },
+    {
+      "email": "sameh.ghanmi@gmail.com",
+      "lastName": "ghanmi",
+      "firstName": "sameh",
+      "password": "teacherPassword",
+      "role": ["teacher"]
+    },
+    {
+      "email": "amira.manai@gmail.com",
+      "lastName": "manai",
+      "firstName": "amira",
+      "password": "studentPasword",
+      "role": ["student"]
+    },
+    {
+      "email": "sarra.naifar@gmail.com",
+      "lastName": "naifar",
+      "firstName": "sarra",
+      "password": "studentPasword",
+      "role": ["student"],
+      "classrooms": [
+        {
+          "ref": "JS101",
+          "language": "JavaScript",
+          "description": "Learn the basics of JavaScript",
+          "completedAssignments": [
+            {
+              "ref": "JS101-Ass01",
+              "answer": "function sum(x,y) {return a+b}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "classrooms": [
+    {
+      "ref": "JS101",
+      "language": "JavaScript",
+      "description": "Learn the basics of JavaScript",
+      "Teachers": ["moncef@gmail.com", "sameh.ghanmi@gmail.com"],
+      "students": ["sarra.naifar@gmail.com"],
+      "asignments": [
+        {
+          "ref": "JS101-Ass01",
+          "name": "Functions",
+          "statement": "write a function that return the sum of two given numbers",
+          "url": "",
+          "tests": [
+            "sum(1,2) === 3", "sum(2,3) === 5", "sum(3, 4) === 7"
+          ]
+        },
+        {
+          "ref": "JS101-Ass02",
+          "name": "Strings",
+          "statement": "write a function 'concat(strA, strB)'that concatenate two strings",
+          "url": "",
+          "tests": [
+            "concat('a','b') === ab", "sum('xy','z') === xyz", "sum('', '') === ''"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "JS102",
+      "language": "Object Oriented JavaScript",
+      "description": "Learn how to write better code using Objects",
+      "Teachers": ["moncef@gmail.com", "sameh.ghanmi@gmail.com"],
+      "students": ["sarra.naifar@gmail.com", "amira.manai@gmail.com"],
+      "asignments": [
+        {
+          "ref": "JS102-Ass01",
+          "name": "Plain Objects",
+          "statement": "Write a plain JavaScript object to represent a tree",
+          "url": "",
+          "tests": [
+            "typeof buildTree() === 'object'", "'name' in buildTree()",
+            "'height' in buildTree()", "'family in buildTree()'"
+          ]
+        },
+        {
+          "ref": "JS102-Ass02",
+          "name": "Build Objects",
+          "statement": "write a function 'zip(arrA, arrB)' that takes an array of keys and an array of values an return an object",
+          "url": "",
+          "tests": [
+            "typeof zip(['key'],['val']) === 'object'",
+            "let ob = zip(['a', 'b'],[1, 2]); (ob.a === 1 and ob.b === 2)",
+            "let ob = zip(['a', 'b'],[[1,2], 0]); (ob.a[0] === 1 and ob.a[1] === 2 and ob.b === 0)"
+          ]
+        },
+        {
+          "ref": "JS102-Ass03",
+          "name": "Built-in object methods",
+          "statement": "write a function 'unzip(object)' that takes an object and return an array where at index 0 an array of keys and at index 1 an array of values",
+          "url": "",
+          "tests": [
+            "typeof zip({'a':1}) === 'object'",
+            "let arr = zip({'a':1, 'b':2}); (arr[0][0] === 'a' and arr[0][1] === 'b')",
+            "let arr = zip({'z':42}); (arr[0][0] === 'z' and arr[1][0] === 42)"
+          ]
+        }
+      ]
+    }
+  ]
+}
