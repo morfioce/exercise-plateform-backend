@@ -1,32 +1,31 @@
 # GoMyCode Exercices Platform Back end 
 
-this the back end of the GoMyCode Exercices Platform project .
-key words : NodeJS , expressJS , Mongodb 
+This repository is the back end of the GoMyCode Exercices Platform project.  
+Key words : NodeJS , expressJS , Mongodb, Mongoose.  
 
+## Back end API
 
-## Project Brief 
+The back end application is primaraly a Rest API consumed by a Front end application.
 
-the back end of the project is an API to practice javascript exercices .
-with the backend of this platform have the following features:
-- login as a teacher or as student
-- Teacher access : 
-*   create classrooms
-*   remove classrooms
-*	create exercices
-*   remove exercices
-*   edit exrcices
-*   consult list of collections
-*   consult list of exerices
-- Student Access:
-*   consult list of collections
-*   consult list of exerices
-*   run exerices 
-*   submit exercices
+Available Rest APIs endpoints:
 
+1. Authenticate a teacher or a student
+
+2. Create a classroom by a teacher
+
+3. Remove a classroom by a teacher
+
+4. Create an exercise inside a classroom
+
+3. Edit an exercise inside a classroom
+
+4. Subscribe a student to a classroom
+
+5. Save the progress of a student
 
 
 ## Built With
 
-* [NodeJS](https://nodejs.org/en/) - The run time javascript
-* [ExpressJS](http://expressjs.com/) - framework web for node.js
-* [Mongodb](https://www.mongodb.com/) - database
+* [NodeJS](http://www.dropwizard.io/1.0.2/docs/)
+* [ExpressJS](http://expressjs.com/)
+* [Mongodb](https://rometools.github.io/rome/)
