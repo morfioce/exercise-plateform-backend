@@ -1,25 +1,24 @@
-const express = require('express')
+const express= require('express')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
-const errorHandler = require('errorhandler')
+const errorhandler = require ('errorhandler')
 
-const PORT = process.argv[2] || 3000
+const PORT = process.argv[2] || 8000
+const app  = express()
 
-const app = express()
-
-// Define thrid party middelwares
 app.use(logger('dev'))
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(errorhandler())
 
-
-app.get('/', (req, res) => {
-  res.send('working')
+app.get('/' , (req,res) => {
+  res.send('Welcome to GoMyCode Exercise Platform')
 })
 
-
-app.use(errorHandler())
-
-app.listen(PORT, (err) => {
-  if (err) return console.error(err)
-  else console.log(`server is running at port ${PORT}`)
+app.listen(PORT , (err) => {
+  if (err) {
+    console.error(err)
+    process.exit(1)
+  }
+  console.log(`server is listening at port ${PORT}`)
 })
