@@ -1,11 +1,31 @@
-## GoMyCode Exercise plateform
+# GoMyCode Exercices Platform Back end 
 
-The back end of GoMyCode exercise plateform developed using `NodeJS`, `Express` framework, `MongoDB` and `Replit` API.
+This repository is the back end of the GoMyCode Exercices Platform project.  
+Key words : NodeJS , expressJS , Mongodb, Mongoose.  
 
-## Set up your development environment
+## Back end API
 
-```Shell
-git clone @githubAddress
-npm install
-npm start
-```
+The back end application is primaraly a Rest API consumed by a Front end application.
+
+Available Rest APIs endpoints:
+
+1. Authenticate a teacher or a student
+
+2. Create a classroom by a teacher
+
+3. Remove a classroom by a teacher
+
+4. Create an exercise inside a classroom
+
+3. Edit an exercise inside a classroom
+
+4. Subscribe a student to a classroom
+
+5. Save the progress of a student
+
+
+## Built With
+
+* [NodeJS](http://www.dropwizard.io/1.0.2/docs/)
+* [ExpressJS](http://expressjs.com/)
+* [Mongodb](https://rometools.github.io/rome/)

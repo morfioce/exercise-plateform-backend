@@ -1,23 +1,20 @@
 {
-  "name": "server",
+  "name": "Backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node-dev index.js"
+    "start": "node-dev server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "1.18.2",
     "errorhandler": "1.5.0",
     "express": "4.16.2",
     "mongodb": "3.0.0-rc0",
-    "morgan": "1.9.0"
-  },
-  "devDependencies": {
+    "morgan": "1.9.0",
     "node-dev": "3.1.3"
   }
 }
