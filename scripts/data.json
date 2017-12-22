@@ -5,14 +5,16 @@
       "lastName": "bouallagui",
       "firstName": "moncef",
       "password": "$2b$10$mahlhactGi3RNYjZvoWutOgwQqC4vJY5n68YQVDVAjMXWGR8biGVK",
-      "role": ["teacher", "student"]
+      "role": ["teacher", "student"],
+      "classrooms":["JS101"]
     },
     {
       "email": "sameh.ghanmi@gmail.com",
       "lastName": "ghanmi",
       "firstName": "sameh",
       "password": "$2b$10$mahlhactGi3RNYjZvoWutOgwQqC4vJY5n68YQVDVAjMXWGR8biGVK",
-      "role": ["teacher"]
+      "role": ["teacher"],
+      "classrooms": ["JS102", "JS101"]
     },
     {
       "email": "amira.manai@gmail.com",
@@ -47,6 +49,7 @@
     {
       "ref": "JS101",
       "language": "JavaScript",
+      "name": "Introduction to JavaScript",
       "description": "Learn the basics of JavaScript",
       "Teachers": ["moncef@gmail.com", "sameh.ghanmi@gmail.com"],
       "students": ["sarra.naifar@gmail.com"],
@@ -73,7 +76,8 @@
     },
     {
       "ref": "JS102",
-      "language": "Object Oriented JavaScript",
+      "language": "JavaScript",
+      "name": "Object Oriented JavaScript",
       "description": "Learn how to write better code using Objects",
       "Teachers": ["moncef@gmail.com", "sameh.ghanmi@gmail.com"],
       "students": ["sarra.naifar@gmail.com", "amira.manai@gmail.com"],
