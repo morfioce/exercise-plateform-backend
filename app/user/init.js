@@ -1,12 +1,17 @@
 const userDao = require('./user-dao.js')
 
 function initUser (app) {
-  app.get('/users/:email', (req, res, next) => {
-    const email = req.params.email
-    userDao.findUserByEmail(email)
+  app.get('/users/:userName', (req, res, next) => {
+    const userName = req.params.userName
+    userDao.getUserByUserName(userName)
       .then((user) => {
-        console.log('trying to read the user', user)
-        res.send(user)
+        if (!user) res.status(404).send(
+          {
+            error: 404,
+            message: 'User not Found'
+          }
+        )
+        else res.send(user)
       })
       .catch((err) => {
         next(err)

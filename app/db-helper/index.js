@@ -4,7 +4,8 @@ const mongoClient = require('mongodb').MongoClient
 const DB_URL = config.database.db_url
 const DB_NAME = config.database.db_name
 
-const dbConnect = () => {
+// Open a database connection
+const connect = () => {
   return mongoClient.connect(DB_URL)
     .then((databaseHandler) => {
       return databaseHandler.db(DB_NAME)
@@ -15,5 +16,11 @@ const dbConnect = () => {
 }
 
 // close the connection
+const close = (dbHandler) => {
+  return dbHandler.close()
+}
 
-module.exports = dbConnect
+module.exports = {
+  connect,
+  close
+}
