@@ -4,7 +4,7 @@ const path = require('path')
 
 const data = require('./data.json')
 const DB_URL = 'mongodb://localhost:27017'
-const DB_NAME = 'gmc-exercise-plateform'
+const DB_NAME = 'gmc-exercise-platform'
 
 mongoDriver.connect(DB_URL, (err, dbHandler) => {
   // make sure there is no error
