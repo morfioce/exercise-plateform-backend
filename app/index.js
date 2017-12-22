@@ -13,6 +13,6 @@ app.use(bodyParser.urlencoded({
 
 // require('./authentication').init(app)
 require('./user').init(app)
-// require('./classroom').init(app)
+require('./classroom').init(app)
 
 module.exports = app

@@ -55,7 +55,7 @@
       "language": "JavaScript",
       "name": "Introduction to JavaScript",
       "description": "Learn the basics of JavaScript",
-      "Teachers": ["moncef@gmail.com", "sameh.ghanmi@gmail.com"],
+      "teachers": ["moncef@gmail.com", "sameh.ghanmi@gmail.com"],
       "students": ["sarra.naifar@gmail.com"],
       "asignments": [
         {
@@ -83,7 +83,7 @@
       "language": "JavaScript",
       "name": "Object Oriented JavaScript",
       "description": "Learn how to write better code using Objects",
-      "Teachers": ["moncef@gmail.com", "sameh.ghanmi@gmail.com"],
+      "teachers": ["moncef@gmail.com", "sameh.ghanmi@gmail.com"],
       "students": ["sarra.naifar@gmail.com", "amira.manai@gmail.com"],
       "asignments": [
         {

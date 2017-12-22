@@ -1,36 +1,41 @@
 const dbManager = require('../db-helper')
 
 const buildQuery = (key, value) => {
-  return {key: value}
+  return {
+    [key]: value
+  }
 }
 
-const getUserByProp = (prop) => {
-  const query = buildQuery({prop})
+const getUserByProp = (query, projection) => {
   return new Promise((fulfill, reject) => {
-    dbManager.connect().then((db) => {
+    dbManager.connect().then((dbRef) => {
+      const {dbHandler, db} = dbRef
       db.collection('users')
-        .findOne(query)
+        .findOne(query, projection)
         .then((user) => {
           fulfill(user)
-          dbManager.close()
+          dbHandler.close()
         })
         .catch((err) => {
           reject(err)
-          dbManager.close()
+          dbHandler.close()
         })
     })
     .catch((err) => {
       reject(err)
-      dbManager.close()
     })
   })
 }
 const getUserByEmail = (email) => {
-  return getUserByProp(email)
+  const query = buildQuery('email', prop)
+  const projection = {password: 0}
+  return getUserByProp(query, projection)
 }
 
 const getUserByUserName = (userName) => {
-  return getUserByProp(userName)
+  const query = buildQuery('userName', userName)
+  const projection = {password: 0}
+  return getUserByProp(query, projection)
 }
 
 module.exports = {
