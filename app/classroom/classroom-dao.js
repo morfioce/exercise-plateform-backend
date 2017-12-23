@@ -6,14 +6,12 @@ const buildQuery = (key, value) => {
 
 const getClassroomByProp = (query) => {
   return new Promise((fulfill, reject) => {
-    dbManager.connect().then((dbRef) => {
-      const {dbHandler, db} = dbRef
+    dbManager.connect().then((db) => {
       db.collection('classrooms')
         .find(query)
         .toArray((err, classrooms) => {
           if (err) return reject(err)
           else fulfill(classrooms)
-          dbHandler.close()
         })
     })
     .catch((err) => {
@@ -31,7 +29,12 @@ const getClassroomByStudent = (studentEmail) => {
   return getClassroomByProp(studentUserName)
 }
 
+const getClassrooms =  () => {
+  return getClassroomByProp({},{})
+}
+
 module.exports = {
+  getClassrooms,
   getClassroomByTeacher,
   getClassroomByStudent
 }

@@ -5,7 +5,7 @@
       "userName": "morfioce",
       "lastName": "bouallagui",
       "firstName": "moncef",
-      "password": "$2b$10$mahlhactGi3RNYjZvoWutOgwQqC4vJY5n68YQVDVAjMXWGR8biGVK",
+      "password": "$2a$10$UjHj6QfhBDaYrg1WXHDjCOW75ge4ZBQwBkrVqGklM7nFaarne3bG6",
       "role": ["teacher", "student"],
       "classrooms":["JS101"]
     },
@@ -14,7 +14,7 @@
       "userName": "Sam",
       "lastName": "ghanmi",
       "firstName": "sameh",
-      "password": "$2b$10$mahlhactGi3RNYjZvoWutOgwQqC4vJY5n68YQVDVAjMXWGR8biGVK",
+      "password": "$2a$10$UjHj6QfhBDaYrg1WXHDjCOW75ge4ZBQwBkrVqGklM7nFaarne3bG6",
       "role": ["teacher"],
       "classrooms": ["JS102", "JS101"]
     },
@@ -23,7 +23,7 @@
       "userName": "Mira",
       "lastName": "manai",
       "firstName": "amira",
-      "password": "$2b$10$OA5JIHl2ClKDpkoSmd00.ejQ7DfNxf4Sh1AlQBLJfmsX79VYuH1lu",
+      "password": "$2a$10$fLZYaLu4RJ88XEU5gzcpCOK7E57eeZo09TJC36iGNDeOsv5vNGFQi",
       "role": ["student"]
     },
     {
@@ -31,7 +31,7 @@
       "userName": "Sarra-dev",
       "lastName": "naifar",
       "firstName": "sarra",
-      "password": "$2b$10$OA5JIHl2ClKDpkoSmd00.ejQ7DfNxf4Sh1AlQBLJfmsX79VYuH1lu",
+      "password": "$2a$10$fLZYaLu4RJ88XEU5gzcpCOK7E57eeZo09TJC36iGNDeOsv5vNGFQi",
       "role": ["student"],
       "classrooms": [
         {

@@ -8,17 +8,14 @@ const buildQuery = (key, value) => {
 
 const getUserByProp = (query, projection) => {
   return new Promise((fulfill, reject) => {
-    dbManager.connect().then((dbRef) => {
-      const {dbHandler, db} = dbRef
+    dbManager.connect().then((db) => {
       db.collection('users')
         .findOne(query, projection)
         .then((user) => {
           fulfill(user)
-          dbHandler.close()
         })
         .catch((err) => {
           reject(err)
-          dbHandler.close()
         })
     })
     .catch((err) => {
@@ -38,7 +35,14 @@ const getUserByUserName = (userName) => {
   return getUserByProp(query, projection)
 }
 
+const getUserById = (id) => {
+  const query = buildQuery('_id', id)
+  const projection = {password: 0}
+  return getUserByProp(query, projection)
+}
+
 module.exports = {
+  getUserById,
   getUserByEmail,
   getUserByUserName
 }

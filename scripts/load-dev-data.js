@@ -1,10 +1,17 @@
 const mongoDriver = require('mongodb').MongoClient
 const assert = require('assert')
 const path = require('path')
+const config = require('../config/')
 
 const data = require('./data.json')
-const DB_URL = 'mongodb://localhost:27017'
-const DB_NAME = 'gmc-exercise-platform'
+const DB_URL = config.database.db_url
+const DB_NAME = config.database.db_name
+
+// Generate Password
+// const saltRounds = 10
+// const myPlaintextPassword = 'my-password'
+// const salt = bcrypt.genSaltSync(saltRounds)
+// const passwordHash = bcrypt.hashSync(myPlaintextPassword, salt)
 
 mongoDriver.connect(DB_URL, (err, dbHandler) => {
   // make sure there is no error
