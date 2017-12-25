@@ -34,9 +34,11 @@ passport.serializeUser(function(user, cb) {
 
 passport.deserializeUser(function(id, cb) {
   userDao.getUserById(id)
-    .then(function (err, user) {
-      if (err) { return cb(err); }
+    .then((user) => {
       cb(null, user);
+    })
+    .catch((err) => {
+      cb(err)
     });
 });
 
